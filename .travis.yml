@@ -1,0 +1,8 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -f -t appa253/docker-react Dockerfile.dev .
+script:
+    - docker run appa253/docker-react npm run test -- --coverage
