@@ -11,7 +11,6 @@ deploy:
     provider: s3
     region: "us-east-2"
     bucket: Docker-React
-    local_dir: dist
     access_key_id: "U19QQcju8lVfX42vpasItnDWe9Aa6D+aLxVRxy+A3Bs9w4Jboqitg9KGKvYnD4JpCyMXEee+qZk9zXnhwQMxFfFi9NjcKI0Xv5TaTK85vLC7mQY6kTqTMrz4PgOoNdfIxEXorrVYw87G5/gbL4OhMAp+jK32vCJzKy3CrARxmFo="
     secret_access_key:
         secure: "U19QQcju8lVfX42vpasItnDWe9Aa6D+aLxVRxy+A3Bs9w4Jboqitg9KGKvYnD4JpCyMXEee+qZk9zXnhwQMxFfFi9NjcKI0Xv5TaTK85vLC7mQY6kTqTMrz4PgOoNdfIxEXorrVYw87G5/gbL4OhMAp+jK32vCJzKy3CrARxmFo="
