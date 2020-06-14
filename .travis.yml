@@ -8,14 +8,10 @@ script:
     - docker run -e CI=true appa253/docker-react npm run test
 
 deploy:
-    provider: elasticbeanstalk
+    provider: s3
     region: "us-east-2"
-    app: "Docker-React"
-    env: "DockerReact-env"
-    bucket_name: "elasticbeanstalk-us-east-2-539062601900"
-    bucket_path: "Docker-React"
-    on:
-        branch: master
+    bucket: Docker-React
+    local_dir: dist
     access_key_id: "U19QQcju8lVfX42vpasItnDWe9Aa6D+aLxVRxy+A3Bs9w4Jboqitg9KGKvYnD4JpCyMXEee+qZk9zXnhwQMxFfFi9NjcKI0Xv5TaTK85vLC7mQY6kTqTMrz4PgOoNdfIxEXorrVYw87G5/gbL4OhMAp+jK32vCJzKy3CrARxmFo="
     secret_access_key:
         secure: "U19QQcju8lVfX42vpasItnDWe9Aa6D+aLxVRxy+A3Bs9w4Jboqitg9KGKvYnD4JpCyMXEee+qZk9zXnhwQMxFfFi9NjcKI0Xv5TaTK85vLC7mQY6kTqTMrz4PgOoNdfIxEXorrVYw87G5/gbL4OhMAp+jK32vCJzKy3CrARxmFo="
